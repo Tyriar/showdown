@@ -136,7 +136,7 @@
                 type: 'lang',
                 extract: ['code'],
                 filter: function (text) {
-                    var imageMarkdownRegex = /^(?:\{(.*?)\})?!(?:\[([^\n\]]*)\])(?:\(([^\n\]]*)\))?$/gim;
+                    var imageMarkdownRegex = /^(?:\{(.*?)\})?!(?:\[([^\n\]]*)\])(?:\(([^\n\]]*)\))?\s*$/gim;
 
                     text = text.replace(imageMarkdownRegex, function (match, key, alt, src) {
                         if (src) {
